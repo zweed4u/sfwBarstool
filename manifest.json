@@ -1,11 +1,10 @@
 {
 	"browser_action": {
 		"default_icon": "icon.png",
-      		"default_title": "SFW Barstool\nClick to set blacklist",
-		"popup": "popup.html"
+      		"default_title": "SFW Barstool"
    	},
    	"content_scripts": [ {
-      		"js": [ "sfwBarstool.js" ],
+      		"js": [ "sfwBarstool.js"  ],
       		"matches": [ "http://*.barstoolsports.com/*" ]
    	} ],
    	"description": "SFW Barstool, blacklists a series of words and removes pictures associated with matching stories with blacklisted titles.",

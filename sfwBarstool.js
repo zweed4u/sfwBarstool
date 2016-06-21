@@ -1,3 +1,5 @@
+var blackList = prompt("Please blacklist word/s delimited by space", "example: lnbs gta heat check");
+blackList=blackList.split(' ');
 blackList = ["wake up", "smoke", "lnbs", "heat check", "guess that"]
 for (story = 0; story < document.getElementsByClassName('bp-entry').length; story++) {
   for (word = 0; word < blackList.length; word++) {
