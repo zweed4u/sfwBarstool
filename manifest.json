@@ -1,0 +1,17 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "SFW Barstool"
+   },
+   "content_scripts": [ {
+      "js": [ "sfwBarstool.js" ],
+      "matches": [ "http://*.barstoolsports.com/*" ]
+   } ],
+   "description": "SFW Barstool, blacklists a series of words and removes pictures associated with matching stories with blacklisted titles.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "manifest_version": 2,
+   "name": "SFW Barstool",
+   "version": "1"
+}
